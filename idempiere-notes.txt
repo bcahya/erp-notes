@@ -1,0 +1,29 @@
+idempiere notes
+
+1. Callout
+
+a. New > Plug in Project
+   Target Platform: an OSGI framework Equinox
+   Execution Environtment: JavaSE-1.6
+   Un-tick generate an activator
+
+b. Open MANIFEST.MF
+   Dependencies:
+   	 Required Plug-ins:
+   	   org.adempiere.base
+   	   org.adempiere.utils
+
+c. Create package
+   callout-implementation
+     create class which implements IColumnCallout
+   callout-factories
+     create class which implements IColumnCalloutFactory
+
+d. Create component definition
+   New > Other > Plug-in Development > Component Definition
+   class which implements IColumnCalloutFactory
+   Add Property: service.ranking, type integer, standard value 100
+   Provided services: org.adempiere.base.IColumnCalloutFactory
+
+e. Run server.product
+   Plug-ins: tick your new plug-in, auto start: true
