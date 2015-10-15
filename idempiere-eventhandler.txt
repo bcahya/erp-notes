@@ -1,0 +1,41 @@
+1. Event handler, Model Validator (The new ways)
+
+a. New > Plug in Project
+   Target Platform: an OSGI framework Equinox
+   Execution Environtment: JavaSE-1.6
+   Un-tick generate an activator
+
+b. Open MANIFEST.MF
+   Dependencies:
+     Required Plug-ins:
+       i   org.adempiere.base
+       ii  org.adempiere.plugin.utils
+       iii org.eclipse.osgi.services
+
+   Jenkins note:
+       option iii 
+       imported packages org.eclipse.osgi.event
+
+c. Create package
+   processes-implementation
+     create class with extends AbstractEventHandler
+       implement initialize()
+         registerTableEvent(IEventTopics.PO_AFTER_CHANGE, tableName);
+       implement doHandleEvent(Event event);
+         PO po = getPO(event);
+
+d. Create component definition
+   New > Other > Plug-in Development > Component Definition
+   class which extends AbstractEventHandler created previously
+   Add Property: service.ranking, type integer, standard value 100
+   Referenced services: IEventManager
+     edit: add bindEventManager to Bind properties
+
+e. Run server.product
+   Plug-ins: tick your new plug-in, auto start: true
+
+Note:
+  Check AbstractEventHandler.java
+  Check IEventTopics.java
+
+  AfterLogin send LoginEventData, taken from getEventData(event)
