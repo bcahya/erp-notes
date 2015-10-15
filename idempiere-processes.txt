@@ -1,0 +1,27 @@
+1. Processes
+
+a. New > Plug in Project
+   Target Platform: an OSGI framework Equinox
+   Execution Environtment: JavaSE-1.6
+   Un-tick generate an activator
+
+b. Open MANIFEST.MF
+   Dependencies:
+     Required Plug-ins:
+       org.adempiere.base
+       org.adempiere.plugin.utils
+
+c. Create package
+   processes-implementation
+     create class which extends SvrProcess
+   callout-factories
+     create class which implements IProcessFactory
+
+d. Create component definition
+   New > Other > Plug-in Development > Component Definition
+   class which implements IProcessFactory
+   Add Property: service.ranking, type integer, standard value 100
+   Provided services: org.adempiere.base.IProcessFactory
+
+e. Run server.product
+   Plug-ins: tick your new plug-in, auto start: true
