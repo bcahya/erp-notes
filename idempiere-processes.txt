@@ -16,6 +16,7 @@ c. Create package
      create class which extends SvrProcess
    callout-factories
      create class which implements IProcessFactory
+       check classname and return new Object based on classname
 
 d. Create component definition
    New > Other > Plug-in Development > Component Definition
