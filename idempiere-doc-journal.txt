@@ -1,0 +1,30 @@
+1. Doc
+
+a. New > Plug in Project
+   Target Platform: an OSGI framework Equinox
+   Execution Environtment: JavaSE-1.6
+   Un-tick generate an activator
+
+b. Open MANIFEST.MF
+   Dependencies:
+     Required Plug-ins:
+       i   org.adempiere.base
+       ii  org.adempiere.plugin.utils
+
+c. Create package
+   doc-implementation
+     create class with extends Doc ie Doc_MyTable extends Doc
+
+   docfactory
+     create class with implements IDocFactory
+     Check DefaultDocumentFactory for implementation references
+
+d. Create component definition
+   New > Other > Plug-in Development > Component Definition
+   class which extends AbstractEventHandler created previously
+   Add Property: service.ranking, type integer, standard value 100
+   Add Property: gaap, type String, standard value *
+   Provide services: IDocFactory  
+
+e. Run server.product
+   Plug-ins: tick your new plug-in, auto start: true
