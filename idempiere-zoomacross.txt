@@ -1,0 +1,8 @@
+1. Zoom Across
+
+a. Configure Relation Type
+     Using reference
+
+b. Check IZoomProvider.java & Generic Zoom Provider.java for details implementation
+
+Idea: Freedom to Define our target window
