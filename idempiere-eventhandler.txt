@@ -30,6 +30,8 @@ d. Create component definition
    Add Property: service.ranking, type integer, standard value 100
    Referenced services: IEventManager
      edit: add bindEventManager to Bind properties
+     edit: add unbindEventManager to Unbind properties
+     (this two methods available through AbstractEventHandler.java)
 
 e. Run server.product
    Plug-ins: tick your new plug-in, auto start: true
