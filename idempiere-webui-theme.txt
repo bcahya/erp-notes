@@ -1,0 +1,28 @@
+1. Web UI Theme
+
+a. New > Fragment Project Project
+   Target Platform: an OSGI framework Equinox
+   Execution Environtment: JavaSE-1.6
+   Host Plug-in ID: org.adempiere.ui.zk
+
+b. Create folder
+   Theme, copy contents from theme > default of org.adempiere.ui.zk
+   made some changes, rename files theme and become newtheme
+
+c. Open MANIFEST.MF
+   Runtime:
+     Classpath: 
+       i  your theme folder
+       ii root of this fragment
+
+   Build:
+     Binary Build
+       tick your theme folder
+
+d. Run server.product
+   Plug-ins: tick your new fragment, auto start: true
+
+e. Login with user System and role System
+   Open System Configurator
+     Create New: ZK_THEME
+     Configured value: newtheme (taken from b) 
