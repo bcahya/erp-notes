@@ -1,4 +1,4 @@
-1. Web UI Theme
+   1. Web UI Theme
 
 a. New > Fragment Project Project
    Target Platform: an OSGI framework Equinox
@@ -25,4 +25,11 @@ d. Run server.product
 e. Login with user System and role System
    Open System Configurator
      Create New: ZK_THEME
-     Configured value: newtheme (taken from b) 
+     Configured value: newtheme (taken from b)
+
+Notes:
+  while you are using your own folder, ie: theme/mytheme; you should changes related folder in the related zul files
+  for example login.zul:
+    <include src="/theme/mytheme/zul/login/login-left.zul"/>
+    while the original was
+    <include src="/theme/default/zul/login/login-left.zul"/>
