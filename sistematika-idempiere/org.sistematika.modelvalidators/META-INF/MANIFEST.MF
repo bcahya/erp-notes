@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: org.sistematika.modelvalidators
+Bundle-SymbolicName: org.sistematika.modelvalidators
+Bundle-Version: 1.0.0.qualifier
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Require-Bundle: org.adempiere.base;bundle-version="2.1.0",
+ org.adempiere.plugin.utils;bundle-version="2.1.0"
+Service-Component: SISModelValidatorFactory.xml
