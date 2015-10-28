@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         id="id.web.sistematika.model.SistematikaValidator"
+         name="id.web.sistematika.model.SistematikaValidator"
+         point="org.adempiere.base.ModelValidator">
+      <listener
+            class="id.web.sistematika.model.SistematikaValidator">
+      </listener>
+   </extension>
+   <extension
+         id="id.web.sistematika.process.SistematikaProcess"
+         name="id.web.sistematika.process.SistematikaProcess"
+         point="org.adempiere.base.Process">
+      <process
+            class="id.web.sistematika.process.SistematikaProcess">
+      </process>
+   </extension>
+
+</plugin>
