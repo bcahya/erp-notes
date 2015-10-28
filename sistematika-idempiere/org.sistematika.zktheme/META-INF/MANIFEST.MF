@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: ZKTheme
+Bundle-SymbolicName: org.sistematika.zktheme
+Bundle-Version: 1.0.0.qualifier
+Fragment-Host: org.adempiere.ui.zk;bundle-version="2.1.0"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-ClassPath: theme/,
+ .
