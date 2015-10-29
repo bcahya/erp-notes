@@ -1,7 +1,7 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: Base
-Bundle-SymbolicName: id.web.sistematika.base;singleton:=true
+Bundle-SymbolicName: test.id.web.sistematika.base;singleton:=true
 Bundle-Version: 1.0.0.qualifier
 Bundle-Vendor: Sistematika Integrasi
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
