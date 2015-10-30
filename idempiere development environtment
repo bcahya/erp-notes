@@ -1,0 +1,8 @@
+idempiere development environtment
+
+1. remove metadata & targetPlatform
+2a. Indigo SR2+buckminster 3.7
+2b. Kepler SR2+buckminster 4.3
+4. materialize, build all, running well
+
+Tested
