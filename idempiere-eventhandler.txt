@@ -17,7 +17,7 @@ b. Open MANIFEST.MF
        imported packages org.eclipse.osgi.event
 
 c. Create package
-   processes-implementation
+   events-implementation
      create class with extends AbstractEventHandler
        implement initialize()
          registerTableEvent(IEventTopics.PO_AFTER_CHANGE, tableName);

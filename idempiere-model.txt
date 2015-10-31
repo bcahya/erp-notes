@@ -21,7 +21,7 @@ c. Create package
 
 d. Create component definition
    New > Other > Plug-in Development > Component Definition
-   class which implements IProcessFactory (getClass, getPO id and resultsets)
+   class which implements IModelFactory (getClass, getPO id and resultsets)
    Add Property: service.ranking, type integer, standard value 100
    Provided services: org.adempiere.base.IModelFactory
 
