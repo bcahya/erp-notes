@@ -5,4 +5,11 @@ idempiere development environtment
 2b. Kepler SR2+buckminster 4.3
 4. materialize, build all, running well
 
+version 3.1 (25 Jan 16)
+1. remove metadata & targetPlatform
+2a. Luna 4.4.2+buckminster 4.4
+3. materialize
+4. execute copyjars.xml on some projects
+5. build all, successful compilation
+
 Tested
